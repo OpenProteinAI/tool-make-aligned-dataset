@@ -2,7 +2,7 @@
 This repository provides a Python script for creating a dataset of aligned sequences
 from a dataset with unaligned sequences. Alignment is performed using [mafft](https://mafft.cbrc.jp/alignment/software/).
 
-NOTE: **Apple Silicon e.g. M1 is not supported**
+NOTE: **Apple Silicon e.g. M1 is not supported. Windows (if not using WSL) probably also doesn't work.**
 
 ## Prerequisites
 
