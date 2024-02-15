@@ -6,7 +6,7 @@ NOTE: **Apple Silicon e.g. M1 is not supported. Windows (if not using WSL) proba
 
 ## Prerequisites
 
-1. Install [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html). Miniconda is recommeded.
+1. Install [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html). Miniconda/miniforge is recommended for a smaller installation size. If using `mamba`, replace instances of `conda` below with `mamba`.
 
 ## Instructions
 
