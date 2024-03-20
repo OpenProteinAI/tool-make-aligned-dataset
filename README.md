@@ -26,7 +26,7 @@ from a dataset with unaligned sequences. Alignment is performed using [mafft](ht
 
     Next, install `mafft`. For Apple Silicon, you can simply run `brew install mafft`. For Windows, follow the [instructions on the mafft website](https://mafft.cbrc.jp/alignment/software/windows.html).
 
-    
+    Proceed to Step 2.
 
 1. Activate the conda environment
 
