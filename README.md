@@ -2,19 +2,31 @@
 This repository provides a Python script for creating a dataset with aligned sequences
 from a dataset with unaligned sequences. Alignment is performed using [mafft](https://mafft.cbrc.jp/alignment/software/).
 
-NOTE: **Apple Silicon e.g. M1 is not supported. Windows (if not using WSL) probably also doesn't work.**
-
 ## Prerequisites
 
-1. Install [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html). Miniconda/miniforge is recommended for a smaller installation size. If using `mamba`, replace instances of `conda` below with `mamba`.
+1. Install [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or [mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html). If using `mamba`, replace instances of `conda` below with `mamba`.
 
 ## Instructions
 
-1. Create a conda environment with the necessary dependencies
+1. Create a conda environment with the necessary dependencies.
+
+    a. If you are using Linux or a non-Apple Silicon based Mac, run
 
     ```
     conda env create -n tool-make-aligned-dataset -f environment.yml
     ```
+
+    Proceed to Step 2.
+
+    b. Otherwise (e.g. using Windows without WSL or an Apple Silicon based Mac), run
+
+    ```
+    conda env create -n tool-make-aligned-dataset -f environment-no-mafft.yml
+    ```
+
+    Next, install `mafft`. For Apple Silicon, you can simply run `brew install mafft`. For Windows, follow the [instructions on the mafft website](https://mafft.cbrc.jp/alignment/software/windows.html).
+
+    
 
 1. Activate the conda environment
 
